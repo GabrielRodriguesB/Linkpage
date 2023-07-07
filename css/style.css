@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+
+
+:root{
+	--cor-de-fundo:#222222;
+	--cor-de-fundo-link:#181818;
+	--cor-do-texto-link:#ffffff;
+	--filtro-interruptor: grayscale(1) opacity(0.25);
+
+}
+
+
+.tema-claro {
+
+	--cor-de-fundo:#5b49e8;
+	--cor-de-fundo-link:#ffffff;
+	--cor-do-texto-link:#5b49e8;
+	--filtro-interruptor:grayscale(0) opacity(1);
+}
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	touch-action:manipulation;
+}
+
+html{
+	min-width: 320px;
+	max-width: 1920px;
+}
+
+
+body{
+
+	font-family: "Barlow", sans-serif;
+	background-color: var(--cor-de-fundo);
+	-webkit-font-smoothing:antialiased;
+	transition: 0.5s;
+	font-size:1.2rem
+}
+
+
+.secao-principal {
+	max-width: 500px;
+	margin:0 auto;
+}
+
+
+
+/* Topo */
+
+
+.topo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.topo__interruptor{
+
+	position: absolute;
+	top: 30px;
+	right:30px;
+	border-radius: 100%;
+	border: none;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	filter:var(--filtro-interruptor);
+	cursor: pointer;
+}
+
+
+
+.topo__foto-perfil {
+	margin-top: 60px;
+	width: 150px;
+	border: 4px solid grey;
+	border-radius:100%;
+	box-shadow: 0 2px 10px #000000;
+	transition: 1.5s;
+}
+
+
+.topo__foto-perfil:hover{
+	width: 175px;
+	transition: 1.5s;
+
+}
+
+
+.topo__nome{
+	margin-top: 20px;
+	font-size: 1.25rem;
+	color:#fff;
+}
+
+
+.topo_profissao{
+	margin-top: 4px;
+	color:#fff;
+}
+
+
+
+/* Links */
+
+
+
+
+
+.links {
+
+	margin:30px 30px 0 30px;
+
+}
+
+
+.links .links_link:nth-child(4) details{
+	position: absolute;
+	right: 0%;
+	cursor: pointer;
+} 
+
+
+
+.links_link{
+position: relative;
+margin-bottom: 15px;
+height: 52px;
+background: var(--cor-de-fundo-link);
+border-radius: 3px;
+box-shadow: 0 3px 3px #000;
+display: flex;
+align-items: center;
+justify-content: center;
+color:var(--cor-do-texto-link);
+font-weight: 700;
+text-decoration: none;
+transition: 0.5s;
+
+
+}
+
+.links_link:hover{
+	transition: 0.5s;
+	font-size: 1.1rem;
+	filter:brightness(0.9);
+	border:4px solid silver;
+
+}
+
+
+.links_icone{
+
+	position: absolute;
+	left:19px;
+	font-size: 22px;
+}
+
+
+#ver__mais{
+	font-size: 1.1rem;
+	
+}
+
+
+
+.projetos {
+
+zoom:1.25;
+font-style: italic;
+background-color: grey;
+box-shadow: 1px 1px 5px 5px darkgrey
+	
+}
+
+
+.hidden{
+	display: none;
+	
+}
+
+.links_projetos {
+	
+    text-shadow: 1px 1px 15px red;
+ 
+}
+
+
+
+@media screen and (max-width:499px) {
+
+	body{
+		font-size: 0.7rem;
+	}
+	.projetos {
+
+	zoom:0.95;
+		
+	}
+}
+
+@media screen and (min-width:500px) and (max-width:1279px){
+	body{
+		font-size: 1rem;
+	}
+
+	.projetos {
+
+	zoom:1.15;
+
+		
+	}
+}
+
+
