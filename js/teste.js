@@ -1,1 +1,0 @@
-alert('Apenas um teste');
