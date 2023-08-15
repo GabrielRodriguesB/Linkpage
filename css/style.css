@@ -6,7 +6,7 @@
 	--cor-de-fundo:#222222;
 	--cor-de-fundo-link:#181818;
 	--cor-do-texto-link:#ffffff;
-	--filtro-interruptor: grayscale(1) opacity(0.25);
+	--filtro-interruptor: grayscale(1) opacity(0.4);
 
 }
 
@@ -17,6 +17,7 @@
 	--cor-de-fundo-link:#ffffff;
 	--cor-do-texto-link:#5b49e8;
 	--filtro-interruptor:grayscale(0) opacity(1);
+	--borda-interruptor:3.5px solid darkorange;
 }
 
 
@@ -30,6 +31,7 @@
 html{
 	min-width: 320px;
 	max-width: 1920px;
+	font-size: 15px;
 }
 
 
@@ -38,14 +40,16 @@ body{
 	font-family: "Barlow", sans-serif;
 	background-color: var(--cor-de-fundo);
 	-webkit-font-smoothing:antialiased;
-	transition: 0.5s;
-	font-size:1.2rem
+	transition: 0.35s;
+	font-size:1.3rem;
 }
 
 
 .secao-principal {
 	max-width: 500px;
 	margin:0 auto;
+
+
 }
 
 
@@ -67,11 +71,14 @@ body{
 	right:30px;
 	border-radius: 100%;
 	border: none;
+	border:var(--borda-interruptor);
 	background: #fff;
 	width: 50px;
 	height: 50px;
 	filter:var(--filtro-interruptor);
 	cursor: pointer;
+	transition: 0.5s;
+
 }
 
 
@@ -95,14 +102,17 @@ body{
 
 .topo__nome{
 	margin-top: 20px;
-	font-size: 1.25rem;
+	font-size: 1.35rem;
 	color:#fff;
 }
 
 
 .topo_profissao{
-	margin-top: 4px;
+	margin-top: 6px;
 	color:#fff;
+	font-size: 1.25rem;
+	font-style: italic;
+
 }
 
 
@@ -122,10 +132,16 @@ body{
 
 .links .links_link:nth-child(4) details{
 	position: absolute;
-	right: 0%;
+	right: 3%;
 	cursor: pointer;
+
 } 
 
+
+summary {
+	font-size:21px;
+	
+}
 
 
 .links_link{
@@ -147,10 +163,10 @@ transition: 0.5s;
 }
 
 .links_link:hover{
-	transition: 0.5s;
-	font-size: 1.1rem;
-	filter:brightness(0.9);
-	border:4px solid silver;
+	transition: 0.7s;
+	font-size: 1.5rem;
+	filter:brightness(0.8);
+	border:5px solid silver;
 
 }
 
@@ -172,11 +188,12 @@ transition: 0.5s;
 
 .projetos {
 
+
 zoom:1.25;
 font-style: italic;
 background-color: grey;
 box-shadow: 1px 1px 5px 5px darkgrey
-	
+
 }
 
 
@@ -188,7 +205,7 @@ box-shadow: 1px 1px 5px 5px darkgrey
 .links_projetos {
 	
     text-shadow: 1px 1px 15px red;
- 
+ 	
 }
 
 
@@ -198,6 +215,11 @@ box-shadow: 1px 1px 5px 5px darkgrey
 	body{
 		font-size: 0.9rem;
 	}
+
+	.links_link:hover{
+		font-size: 1rem;
+	}
+
 	.projetos {
 
 	zoom:0.95;
@@ -207,7 +229,11 @@ box-shadow: 1px 1px 5px 5px darkgrey
 
 @media screen and (min-width:500px) and (max-width:1279px){
 	body{
-		font-size: 1.05rem;
+		font-size: 1.1rem;
+	}
+
+	.links_link:hover{
+		font-size: 1.25rem;
 	}
 
 	.projetos {
