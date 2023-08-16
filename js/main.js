@@ -9,6 +9,9 @@ interruptor.addEventListener('click', ()=>{
 })
 
 
+
+
+
 const verMais= document.getElementById('ver__mais');
 const projetos= document.querySelector('.projetos');
 
