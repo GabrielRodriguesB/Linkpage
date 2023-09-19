@@ -54,7 +54,7 @@ body{
 
 
 
-/* Topo */
+
 
 
 .topo{
@@ -101,23 +101,23 @@ body{
 
 
 .topo__nome{
-	margin-top: 20px;
+	margin:20px auto 7px auto;
 	font-size: 1.35rem;
 	color:#fff;
 }
 
 
 .topo_profissao{
-	margin-top: 6px;
 	color:#fff;
 	font-size: 1.25rem;
 	font-style: italic;
+	
 
 }
 
 
 
-/* Links */
+
 
 
 
@@ -207,6 +207,10 @@ box-shadow: 1px 1px 5px 5px darkgrey
     text-shadow: 1px 1px 15px red;
  	
 }
+
+
+
+
 
 
 
